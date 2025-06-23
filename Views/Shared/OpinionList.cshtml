@@ -1,0 +1,40 @@
+﻿@using TPLOCAL1.Models
+@model List<TPLOCAL1.Models.Opinion>
+<head>
+    <title>HN - TP Avis</title>
+    <link rel="stylesheet" href="~/resources/Css/Validation.css">
+</head>
+<header>
+    <img src="~/resources/Image/GroupeHN.png" class="image" alt="GroupeHN" />
+    <h1>Liste des Avis</h1>
+</header>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Home/Index">Accueil</a></li>
+            <li><a href="/Home/Index/Form">Formulaire</a></li>
+        </ul>
+    </nav>
+    <table>
+        <caption>Liste</caption>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Avis donné</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var opinion in Model)
+            {
+                <tr>
+                    <td>@opinion.LastName</td>
+                    <td>@opinion.FirstName</td>
+                    <td style="background-color:@(opinion.OpinionGiven == "O" ? "#028A0F" : "#FF0000")">
+                        @(opinion.OpinionGiven == "O" ? "Oui" : "Non")
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body> 

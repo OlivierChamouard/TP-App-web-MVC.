@@ -1,0 +1,78 @@
+﻿@model TPLOCAL1.Models.InfoPerso
+<head>  
+    <title>HN - TP Validation</title>  
+    <link rel="stylesheet" href="~/resources/Css/Validation.css">  
+</head>  
+<header>  
+    <img src="~/resources/Image/GroupeHN.png" class="image" alt="GroupeHN" />  
+    <h1>Formulaire TP HN avis</h1>  
+</header>  
+<body>  
+    <nav>  
+        <ul>  
+            <li><a href="/Home/Index">Accueil</a></li>  
+            <li><a href="/Home/Index/OpinionList">Avis list</a></li>
+        </ul>  
+    </nav>
+    <p>Votre formulaire a bien été pris en compte</p></<br />
+    <table>
+        <caption>Informations Personelles</caption>
+
+        <tr>
+            <td><label asp-for="Nom" class="control-label">Nom</label></td>
+            <td>@Model.Nom</td>
+        </tr>
+        <tr>
+            <td><label asp-for="Prenom" class="control-label">Prénom</label></td>
+            <td>@Model.Prenom</td>
+        </tr>
+        <tr>
+            <td><label asp-for="Sexe" class="control-label">Sexe</label></td>
+            <td>@Model.Sexe</td>
+        </tr>
+        <tr>
+            <td><label asp-for="Adresse" class="control-label">Adresse</label></td>
+            <td>@Model.Adresse</td>
+        </tr>
+        <tr>
+            <td><label asp-for="CodePostal" class="control-label">Code Postal</label></td>
+            <td>@Model.CodePostal</td>
+        </tr>
+        <tr>
+            <td><label asp-for="Ville" class="control-label">Ville</label></td>
+            <td>@Model.Ville</td>
+        </tr>
+
+        <tr>
+            <td><label asp-for="Email" class="control-label">Adresse Mail</label></td>
+            <td>@Model.Email</td>
+        </tr>
+    </table><br/>
+    <table>
+        <caption>Informations sur la Formation Suivie</caption>
+        <tr>
+            <td><label asp-for="Date" class="control-label">Date début Formation</label></td>
+            <td>
+                @(Model.Date != null ? Model.Date.Value.ToString("dd/MM/yyyy") : "")
+            </td>
+        </tr>
+        <tr>
+            <td><label asp-for="Cours" class="control-label">Formation Suivie</label></td>
+            <td>@Model.Cours</td>
+
+        </tr>
+    </table>
+    <br />
+    <table>
+        <caption>Avis sur la Formation</caption>
+        <tr>
+            <td><label asp-for="Cobol" class="control-label">Formation Cobol</label></td>
+            <td>@Model.Cobol</td>
+
+        </tr>
+        <tr>
+            <td><label asp-for="CSharp" class="control-label">Formation C#</label></td>
+            <td>@Model.CSharp</td>
+        </tr>
+    </table>
+</body>
