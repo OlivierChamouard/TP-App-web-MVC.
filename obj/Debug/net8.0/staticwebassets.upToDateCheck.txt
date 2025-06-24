@@ -58,5 +58,6 @@ wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
 wwwroot\resources\Css\Form.css
 wwwroot\resources\Css\Index.css
+wwwroot\resources\Css\site.css
 wwwroot\resources\Css\Validation.css
 wwwroot\resources\Image\GroupeHN.png

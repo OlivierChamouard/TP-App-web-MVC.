@@ -1,20 +1,18 @@
 ﻿@using TPLOCAL1.Models
 @model List<TPLOCAL1.Models.Opinion>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "HN - TP Avis";
+    ViewData["h1"] = "Liste des Avis";
+    ViewData["l1"] = "/Home/Index";
+    ViewData["lib1"] = "Accueil";
+    ViewData["l2"] = "/Home/Index/Form";
+    ViewData["lib2"] = "Formulaire";
+}
 <head>
-    <title>HN - TP Avis</title>
     <link rel="stylesheet" href="~/resources/Css/Validation.css">
 </head>
-<header>
-    <img src="~/resources/Image/GroupeHN.png" class="image" alt="GroupeHN" />
-    <h1>Liste des Avis</h1>
-</header>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/Home/Index">Accueil</a></li>
-            <li><a href="/Home/Index/Form">Formulaire</a></li>
-        </ul>
-    </nav>
     <table>
         <caption>Liste</caption>
         <thead>

@@ -1,22 +1,20 @@
 ﻿@model TPLOCAL1.Models.InfoPerso
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "HN - TP Validation";
+	ViewData["h1"] = "Page de Validation";
+    ViewData["l1"] = "/Home/Index";
+    ViewData["lib1"] = "Accueil";
+    ViewData["l2"] = "/Home/Index/OpinionList";
+    ViewData["lib2"] = "Liste Avis";
+}
 <head>  
-    <title>HN - TP Validation</title>  
     <link rel="stylesheet" href="~/resources/Css/Validation.css">  
-</head>  
-<header>  
-    <img src="~/resources/Image/GroupeHN.png" class="image" alt="GroupeHN" />  
-    <h1>Formulaire TP HN avis</h1>  
-</header>  
+</head>   
 <body>  
-    <nav>  
-        <ul>  
-            <li><a href="/Home/Index">Accueil</a></li>  
-            <li><a href="/Home/Index/OpinionList">Avis list</a></li>
-        </ul>  
-    </nav>
     <p>Votre formulaire a bien été pris en compte</p></<br />
     <table>
-        <caption>Informations Personelles</caption>
+        <caption>Informations Personnelles</caption>
 
         <tr>
             <td><label asp-for="Nom" class="control-label">Nom</label></td>
@@ -49,7 +47,7 @@
         </tr>
     </table><br/>
     <table>
-        <caption>Informations sur la Formation Suivie</caption>
+        <caption>Informations Formation Suivie</caption>
         <tr>
             <td><label asp-for="Date" class="control-label">Date début Formation</label></td>
             <td>

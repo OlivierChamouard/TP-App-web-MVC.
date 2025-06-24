@@ -12,12 +12,12 @@ namespace TPLOCAL1.Models
         public string Nom { get; set; }
         [Required(ErrorMessage = "Veuillez introduire un Prénom.")]
         public string? Prenom { get; set; }
-        [Required(ErrorMessage = "Veuillez introduire un Genre.")]
+        [Required(ErrorMessage = "Veuillez choisir le Sexe.")]
         public string? Sexe { get; set; }
         [Required(ErrorMessage = "Veuillez introduire une Adresse.")]
         public string? Adresse { get; set; }
-        [Required(ErrorMessage = "Veuillez introduire un code postal.")]
-        [RegularExpression(@"^\d{5}$", ErrorMessage = "Le code postal doit comporter exactement 5 chiffres.")]
+        [Required(ErrorMessage = "Veuillez introduire un Code Postal.")]
+        [RegularExpression(@"^\d{5}$", ErrorMessage = "Le Code Postal doit comporter exactement 5 chiffres.")]
         public string? CodePostal { get; set; }
         [Required(ErrorMessage = "Veuillez introduire une Ville.")]
         public string? Ville { get; set; }
@@ -27,7 +27,7 @@ namespace TPLOCAL1.Models
         [Required(ErrorMessage = "Veuillez choisir une Date de début de Formation .")]
         [Range(typeof(DateTime), "", "1/1/2021", ErrorMessage = "La date doit être antérieure au 01/01/2021.")]
         public DateTime? Date { get; set; }
-        [Required(ErrorMessage = "Veuillez choisir un Cours.")]
+        [Required(ErrorMessage = "Veuillez choisir une Formation Suivie.")]
         public string? Cours { get; set; }
      
         public string? Cobol { get; set; }

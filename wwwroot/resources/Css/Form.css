@@ -1,39 +1,4 @@
-﻿.image 
-{
-    width: 150px;
-    height: 150px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-h1 
-{
-    margin-right: 170px;
-    margin-left: 170px;
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
-}
-Nav 
-{
-    width: 150px;
-    border: 2px solid #8c014c;
-    background-color: #8c014c;
-    float: left;
-    color: white;
-}
-
-Li 
-{
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
-a 
-{
-    color: chocolate;
-}
-.parent {
+﻿.parent {
     margin-left: 170px;
 }
 table, th, td {
