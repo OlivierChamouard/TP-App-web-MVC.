@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TPLOCAL1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d7f63620e9e0436868186b024890433e54b58c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eef307f70bb08611170b27d338d286209c01b41a")]
 [assembly: System.Reflection.AssemblyProductAttribute("TPLOCAL1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TPLOCAL1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
